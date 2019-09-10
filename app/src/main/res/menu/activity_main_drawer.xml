@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Tutorial"
+            android:icon="@drawable/vec"
+            android:title="Tutorial"
+        />
+
+        <!--  ic_menu_galary -->
+
+        <item
+            android:id="@+id/Algorithms"
+            android:icon="@drawable/vecsnapchat"
+            android:title="Algorithms" />
+        <item
+            android:id="@+id/interview"
+            android:icon="@drawable/logo"
+            android:title="Interview Question" />
+
+        <item
+            android:id="@+id/flowchart"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="FlowCharts" />
+
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Quiz" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

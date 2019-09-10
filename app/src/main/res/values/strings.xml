@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">Algorithm Tutorials</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="chapter">
+        <item>Heap Sort</item>
+        <item>Merge Sort</item>
+        <item>Selection Sort </item>
+        <item>Insertion Sort</item>
+        <item>Kruskal</item>
+        <item>Prims</item>
+        <item>Dijikstra</item>
+        <item>Convex Hull(Grahm Scan)</item>
+        <item>0-1 Knapack</item>
+        <item>Matrix Chain Multiplication</item>
+        <item>Longest Common Substitute</item>
+    </string-array>
+
+
+    <string-array name="answer">
+        <item>this is my Admin Module</item>
+        <item>this is my User Module</item>
+        <item>this is my Employee Module</item>
+    </string-array>
+
+
+    <string-array name="question">
+        <item>What is an algorithm?</item>
+        <item>Can Binary Search be used for linked lists?</item>
+        <item>How to find if two given rectangles overlap?</item>
+        <item>When does the worst case of QuickSort occur?</item>
+        <item>Given a big string of characters, how to efficiently find the first unique character in it?</item>
+        <item>How to count inversions in a sorted array?</item>
+        <item>Given a big array, how to efficiently find k th largest element in it?</item>
+        <item>Given an array of size n with range of numbers from 1 to n+1. The array doesnot contain any duplicate, one number is missing, find the missing number.</item>
+        <item>How to write an efficient method to calculate x raise to the power n?</item>
+        <item>What is a graph?</item>
+        <item>What is hashing?</item>
+        <item>What is interpolation search technique?</item>
+    </string-array>
+
+
+    <string-array name="Description">
+        <item>Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output. An algorithm is thus a sequence of computational steps that transform the input into the output.</item>
+        <item>Since random access is not allowed in linked list, we cannot reach the middle element in O(1) time. Therefore Binary Search is not possible for linked lists. There are other ways though, refer Skip List for example.</item>
+        <item>\nTwo rectangles do not overlap if one of the following conditions is true.\n
+               \n  1) One rectangle is above top edge of other rectangle.\n
+                \n 2) One rectangle is on left side of left edge of other rectangle.\n</item>
+        <item>\nThe worst case of quickSort occurs when one part after partition contains all elements and other part is empty.\n For example, if the input array is sorted and if last or first element is chosen as a pivot, then the worst occurs.</item>
+        <item>The efficient solution is to use character as an index in a count array. Traverse the given string and store index of first occurrence of every character, also store count of occurrences. Then traverse the count array and find the smallest index with count as 1. See find the first unique character for more details.
+        </item>
+        <item>Two elements arr[i] and arr[j] in an array arr[] form an inversion if a[i] > a[j] and i is less j. How to count all inversions in an unsorted array. See Count Inversions in an array for all approaches.</item>
+        <item>There can be many solutions for this. The best solution is to use min heap. We Build a Min Heap MH of the first k elements. For each element, after the kth element (arr[k] to arr[n-1]), compare it with root of MH, if the element is greater than the root then make it root and call heapify for MH, Else ignore it. Finally, MH has k largest elements and root of the MH is the kth largest element. See k largest(or smallest) elements for more details.</item>
+        <item>There can be many ways to solve it. The best among is to use XOR. See Find the missing number for details. There are many variations of this problem like find the two repeating numbers, find a missing and a repeating number, etc</item>
+        <item>The idea is to use divide an conquer here to do it in O(Logn) time.</item>
+        <item>A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.</item>
+        <item>Hashing is a technique to convert a range of key values into a range of indexes of an array. By using hash tables, we can create an associative data storage where data index can be find by providing its key values.</item>
+        <item>Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of required value.</item>
+    </string-array>
+
+    <string-array name="tutorial">
+        <item>DAA - Introduction</item>
+        <item>DAA - Analysis of Algorithms</item>
+        <item>DAA - Divide AND Conquer</item>
+        <item>Greedy Method</item>
+        <item>Dynamic Programming</item>
+        <item>Max Cliques</item>
+        <item>Spanning Tree</item>
+        <item>P and N Classes</item>
+        <item>Cooks Theorem</item>
+        <item>Hill Climbing</item>
+        <item>Insertion Sort</item>
+        <item>Selection Sort</item>
+        <item>Quick Sort</item>
+        <item>Radix Sort</item>
+        <item>Counting Sort</item>
+    </string-array>
+
+
+    <string-array name="TutorialDescription">
+        <item>\nAn algorithm is a set of steps of operations to solve a problem performing calculation, data processing, and automated reasoning tasks. An algorithm is an efficient method that can be expressed within finite amount of time and space.\n
+
+\nAn algorithm is the best way to represent the solution of a particular problem in a very simple and efficient way. If we have an algorithm for a specific problem, then we can implement it in any programming language, meaning that the algorithm is independent from any programming languages.\n
+       \n The following steps are involved in solving computational problems.\n
+
+          \n 1.Problem definition\n
+           \n2.Development of a model\n
+          \n 3.Specification of an Algorithm\n
+          \n 4.Designing an Algorithm\n
+           \n5.Checking the correctness of an Algorithm\n
+           \n6.Analysis of an Algorithm\n
+           \n7.Implementation of an Algorithm\n
+           \n8.Program testing\n
+          \n 9.Documentation \n
+
+        \nCharacteristics of Algorithms\n
+            \n The main characteristics of algorithms are as follows -\n
+
+                 \n 1.Algorithms must have a unique name\n
+                 \n 2.Algorithms should have explicitly defined set of inputs and outputs\n
+                  \n3.Algorithms are well-ordered with unambiguous operations\n
+                 \n 4.Algorithms halt in a finite amount of time.\n
+                 \n5.Algorithms should not run for infinity, i.e., an algorithm must end at some point\n
+        </item>
+        <item>\nAlgorithm analysis is an important part of computational complexity theory,\n
+             \nthe efficiency or running time of an algorithm is stated as a function relating the input length to the number of steps, known as time complexity, or volume of memory, known as space complexity.\n
+
+             \n The Need for Analysis\n
+                  \n Analysis of algorithm is the process of analyzing the problem-solving capability of the algorithm in terms of the time and size required (the size of memory for storage while implementation). However, the main concern of analysis of algorithms is the required time or performance. Generally, we perform the following types of analysis -\n
+
+                    \n1.Worst-case - The maximum number of steps taken on any instance of size a.\n
+                   \n 2.Best-case - The minimum number of steps taken on any instance of size a.\n
+                   \n 3.Average case - An average number of steps taken on any instance of size a.\n
+                   \n 4.Amortized - A sequence of operations applied to the input of size a averaged over time.\n
+
+
+        </item>
+        <item>\ndivide and conquer approach, a problem is divided into smaller problems, then the smaller problems are solved independently, and finally the solutions of smaller problems are combined into a solution for the large problem.\n
+
+                  \n Generally, divide-and-conquer algorithms have three parts -
+                     \n  1.Divide the problem into a number of sub-problems that are smaller instances of the same problem.\n
+                       \n2.Conquer the sub-problems by solving them recursively. If they are small enough, solve the sub-problems as base cases.\n
+                      \n 3.Combine the solutions to the sub-problems into the solution for the original problem.\n
+        \nApplication of Divide and Conquer Approach\n
+                      \n 1.Finding the maximum and minimum of a sequence of numbers\n
+                      \n 2.Strassens matrix multiplication\n
+                      \n 3.Merge sort\n
+                      \n 4.Binary search\n
+        </item>
+        <item>\nGreedy algorithms build a solution part by part, choosing the next part in such a way, that it gives an immediate benefit. This approach never reconsiders the choices taken previously. This approach is mainly used to solve optimization problems.
+
+            \nComponents of Greedy Algorithm\n
+                \nGreedy algorithms have the following five components -\n
+
+            \n 1.A candidate set - A solution is created from this set.\n
+             \n2.A selection function - Used to choose the best candidate to be added to the solution.\n
+             \n3.A feasibility function - Used to determine whether a candidate can be used to contribute to the solution.\n
+            \n 4.An objective function - Used to assign a value to a solution or a partial solution.\n
+            \n 5.A solution function - Used to indicate whether a complete solution has been reached.\n
+
+          \n Areas of Application
+              \nGreedy approach is used to solve many problems, such as\n
+
+                  \n1.Finding the shortest path between two vertices using Dijkstra’s algorithm.\n
+                 \n 2.Finding the minimal spanning tree in a graph using Prims or Kruskals algorithm, etc.\n
+        </item>
+        <item>\nDynamic Programming is also used in optimization problems. Like divide-and-conquer method, Dynamic Programming solves problems by combining the solutions of subproblems. Moreover, Dynamic Programming algorithm solves each sub-problem just once and then saves its answer in a table, thereby avoiding the work of re-computing the answer every time.
+           \n Steps of Dynamic Programming Approach\n
+
+                  \n1.Characterize the structure of an optimal solution.\n
+                 \n 2.Recursively define the value of an optimal solution.\n
+                \n  3.Compute the value of an optimal solution, typically in a bottom-up fashion.\n
+                  \n4.Construct an optimal solution from the computed information.\n
+
+            \nApplications of Dynamic Programming Approach\n
+                \n Matrix Chain Multiplication\n
+                \n Longest Common Subsequence\n
+                \n Travelling Salesman Problem\n
+
+        </item>
+        <item>\nIn an undirected graph, a clique is a complete sub-graph of the given graph. Complete sub-graph means, all the vertices of this sub-graph is connected to all other vertices of this sub-graph.
+
+                   \n The Max-Clique problem is the computational problem of finding maximum clique of the graph.</item>
+        <item>\nA spanning tree is a subset of an undirected Graph that has all the vertices connected by minimum number of edges.
+
+                \nIf all the vertices are connected in a graph, then there exists at least one spanning tree. In a graph, there may exist more than one spanning tree.\n
+
+                  \n Properties\n
+                   \n 1.A spanning tree does not have any cycle.\n
+                   \n 2.Any vertex can be reached from any other vertex.\n
+       \n A Minimum Spanning Tree (MST) is a subset of edges of a connected weighted undirected graph that connects all the vertices together with the minimum possible total edge weight. To derive an MST, Prim’s algorithm or Kruskal’s algorithm can be used.\n
+        </item>
+        <item>
+            \nP-Class\n\n
+                \nThe class P consists of those problems that are solvable in polynomial time, i.e. these problems can be solved in time O(nk) in worst-case, where k is constant.\n
+                 These problems are called tractable, while others are called intractable or superpolynomial.
+                 Formally, an algorithm is polynomial time algorithm, if there exists a polynomial p(n) such that the algorithm can solve any instance of size n in a time O(p(n)).
+                Problem requiring O(n50) time to solve are essentially intractable for large n. Most known polynomial time algorithm run in time O(nk) for fairly low value of k.
+                The advantages in considering the class of polynomial-time algorithms is that all reasonable deterministic single processor model of computation can be simulated on each other with at most a polynomial slow-d\n
+
+           \n NP-Class\n\n
+               \n The class NP consists of those problems that are verifiable in polynomial time. NP is the class of decision problems for which it is easy to check the correctness of a claimed answer, with the aid of a little extra information. Hence, we aren’t asking for a way to find a solution, but only to verify that an alleged solution really is correct.\n
+                Every problem in this class can be solved in exponential time using exhaustive search.\n
+
+            \nP versus NP\n\n
+              \n Every decision problem that is solvable by a deterministic polynomial time algorithm is also solvable by a polynomial time non-deterministic algorithm.
+               All problems in P can be solved with polynomial time algorithms, whereas all problems in NP - P are intractable.
+               It is not known whether P = NP. However, many problems are known in NP with the property that if they belong to P, then it can be proved that P = NP.
+               If P ? NP, there are problems in NP that are neither in P nor in NP-Complete.
+               the problem belongs to class P if it’s easy to find a solution for the problem. The problem belongs to NP, if it’s easy to check a solution that may have been very tedious to find.\n
+        </item>
+        <item>\nStephen Cook presented four theorems in his paper “The Complexity of Theorem Proving Procedures”. These theorems are stated below. We do understand that many unknown terms are being used in this chapter, but we don’t have any scope to discuss everything in detail.\n
+
+              \nFollowing are the four theorems by Stephen Cook -\n
+
+                 \n Theorem-1\n
+                 \n If a set S of strings is accepted by some non-deterministic Turing machine within polynomial time, then S is P-reducible to {DNF tautologies}.\n
+
+                 \n Theorem-2\n
+                  \n   The following sets are P-reducible to each other in pairs (and hence each has the same polynomial degree of difficulty): {tautologies}, {DNF tautologies}, D3, {sub-graph pairs}.\n
+
+                 \n Theorem-3\n
+                    \n For any TQ(k) of type Q, TQ(k)kv(logk)2TQ(k)k(logk)2 is unbounded
+                      There is a TQ(k) of type Q such that TQ(k)?2k(logk)2TQ(k)?2k(logk)2
+
+                  \nTheorem-4\n
+                       \n If the set S of strings is accepted by a non-deterministic machine within time T(n) = 2n, and if TQ(k) is an honest (i.e. real-time countable) function of type Q, then there is a constant K, so S can be recognized by a deterministic machine within time TQ(K8n).</item>
+        <item>\nHill Climbing is a technique to solve certain optimization problems. In this technique, we start with a sub-optimal solution and the solution is improved repeatedly until some condition is maximized.</item>
+        <item>\nInsertion sort is a very simple method to sort numbers in an ascending or descending order. This method follows the incremental method. It can be compared with the technique how cards are sorted at the time of playing a game.\n
+
+\nThe numbers, which are needed to be sorted, are known as keys. Here is the algorithm of the insertion sort method.\n
+        \nAlgorithm:\n
+            \nInsertion-Sort(A)\n
+               \n  for j = 2 to A.length\n
+                \n   key = A[j]\n
+                 \n  i = j – 1\n
+                \n while i > 0 and A[i] > key\n
+                \n  A[i + 1] = A[i]\n
+                \n  i = i -1\n
+            \n  A[i + 1] = key\n
+
+           \n Analysis\n
+              \nRun time of this algorithm is very much dependent on the given input.\n
+              \nIf the given numbers are sorted, this algorithm runs in O(n) time. If the given numbers are in reverse order, the algorithm runs in O(n2) time.\n
+        </item>
+        <item>
+           \n This type of sorting is called Selection Sort as it works by repeatedly sorting elements. It works as follows: first find the smallest in the array and exchange it with the element in the first position, then find the second smallest element and exchange it with the element in the second position, and continue in this way until the entire array is sorted.
+        </item>
+        <item>
+           \n It is used on the principle of divide-and-conquer. Quick sort is an algorithm of choice in many situations as it is not difficult to implement. It is a good general purpose sort and it consumes relatively fewer resources during execution.\n
+
+           \n Advantages\n
+             \n 1.It is in-place since it uses only a small auxiliary stack.\n
+             \n 2.It requires only n (log n) time to sort n items.\n
+             \n 3.It has an extremely short inner loop.\n
+             \n 4.This algorithm has been subjected to a thorough mathematical analysis, a very precise statement can be made about performance issues.\n
+
+          \n  Disadvantages\n
+              \n1.It is recursive. Especially, if recursion is not available, the implementation is extremely complicated.\n
+              \n2.It requires quadratic (i.e., n2) time in the worst-case.\n
+             \n 3.It is fragile, i.e. a simple mistake in the implementation can go unnoticed and cause it to perform badly.\n
+        </item>
+        <item>\nRadix sort is a small method that many people intuitively use when alphabetizing a large list of names. Specifically, the list of names is first sorted according to the first letter of each name, that is, the names are arranged in 26 classes.\n
+
+\nIntuitively, one might want to sort numbers on their most significant digit. However, Radix sort works counter-intuitively by sorting on the least significant digits first. On the first pass, all the numbers are sorted on the least significant digit and combined in an array. Then on the second pass, the entire numbers are sorted again on the second least significant digits and combined in an array and so on.</item>
+        <item>\nCounting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

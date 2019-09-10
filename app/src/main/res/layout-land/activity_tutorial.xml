@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1744"
+    >
+
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.piyush.mynav.TutorialFragmentA"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"/>
+
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.piyush.mynav.TutorialFragmentB"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="2dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99CC00"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLEASE THINK IT FIRST BEFORE MOVING TO SOLUTION"
+
+        android:textSize="20dp"
+        android:id="@+id/tv"
+        />
+
+    </ScrollView>
+
+</LinearLayout>

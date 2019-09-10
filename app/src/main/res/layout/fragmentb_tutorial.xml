@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66CCCC"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="textStart"
+        android:textAppearance="@array/TutorialDescription"
+        android:textEditPasteWindowLayout="@array/TutorialDescription"
+
+
+
+        android:text="newtext"
+        android:id="@+id/tv"
+
+        android:textSize="18dp"
+        style="@style/AppTheme.AppBarOverlay"/>
+</ScrollView>
+
+</LinearLayout>
